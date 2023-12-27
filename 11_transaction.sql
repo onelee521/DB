@@ -1,7 +1,7 @@
 -- autocommit 비활성화
 SET autocommit = 0;
 
-START TRANSACTION ; -- 없으면 업뎃3번 인설트 3번하고 롤백했을 때 인설트 부분이 다 롤백?
+START TRANSACTION ;  -- 없으면 업뎃3번 인설트 3번하고 롤백했을 때 인설트 부분이 다 롤백? 같은 종류의 DML 단위로 취소
 
 INSERT
   INTO tbl_menu
